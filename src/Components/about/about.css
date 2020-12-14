@@ -1,0 +1,25 @@
+/* Page About */
+
+/* Section 1 */
+.about__title {
+    text-align: center;
+    padding: 4rem 0;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 7%;
+}
+.content {
+    width: 100%;
+}
+.content__title {
+    padding: 0 0 1rem 0;
+}
+
+.col-7__text-2 {
+    color: white;
+    display: inline-block;
+}
+
+

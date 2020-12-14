@@ -1,0 +1,23 @@
+.statistical-data {
+    list-style: none;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+.statistical-data__detail {
+    border: 1px solid var(--color-grey-dark);
+    margin: 0 0 30px 0;
+    height: 150px;
+    width: 90%;
+    border-radius: 5px;
+}
+.statistical-data__title {
+    color: var(--color-principal);
+    font-size: 40px;
+    padding: 20px 0 0 20px;
+}
+.statistical-data__text {
+    text-align: center;
+}
+.statistical-data__text--display-block {
+    display: block;
+}

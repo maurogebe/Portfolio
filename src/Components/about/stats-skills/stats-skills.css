@@ -1,0 +1,25 @@
+.title-skills {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
+.skill {
+    width: 10%;
+    text-align: center;
+}
+.skill .CircularProgressbar .CircularProgressbar-trail {
+    stroke: rgba(49, 49, 49, 0.34);
+}
+.skill .CircularProgressbar .CircularProgressbar-path {
+    stroke: var(--color-principal);
+}
+.skill .CircularProgressbar .CircularProgressbar-text {
+    fill: white;
+}
+.skill__title {
+    margin-top: 16px;
+}

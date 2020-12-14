@@ -1,0 +1,125 @@
+header {
+    position: fixed;
+    right: 20px;
+    top: 20%;
+  }
+  .nav__menu-toggle > button {
+    display: none;
+  }
+  .nav__menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__menu li {
+    position: relative;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: #2b2a2a;
+    margin-top: 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .active {
+    background-color: var(--color-principal)!important;
+  }
+  .nav__menu h4 {
+    color: transparent;
+    padding-right: 20%;
+    padding-left: 25%;
+    padding-top: 32%;
+    position: absolute;
+    right: 60%;
+    bottom: 0;
+    border-radius: 50px 0 0 50px;
+    padding-bottom: 32%;
+    background-color: var(--color-principal) rgba(0, 0, 0, 0);
+    transition: all 0.2s;
+  }
+  .nav__menu li:hover h4 {
+    display: inline-block;
+    color: white;
+    background: var(--color-principal);
+    right: 100%;
+    transition: right 0.3s, color 1s;
+  }
+  .nav__menu li:hover {
+    border-radius: 0 50px 50px 0;
+    background-color: var(--color-principal);
+  }
+  .nav__menu i {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Responsive del Header */
+  @media only screen and (max-width: 990px) {
+    header {
+        left: 0;
+        right: revert;
+        top: 0;
+        transition: left 1s;
+        height: 0;
+        width: 100%;
+        z-index: 999;
+    }
+    .active {
+        background-color: transparent!important;
+    }
+    .nav {
+        height: 0;
+    }
+    .nav__menu {
+        position: relative;
+        left: -100%;
+        padding-top: 60px;
+        height: 100vh;
+        background-color: var(--color-grey);
+        transition: all 1s;
+    }
+    .nav__menu-toggle {
+        height: 0;
+    }
+    .nav__menu-toggle > button {
+        display: inline-block;
+        position: fixed;
+        top: 20px;
+        right: 21px;
+        width: 50px;
+        height: 40px;
+        border-radius: 5px;
+        border: 0;
+        background-color: var(--color-grey);
+        color: white;
+        z-index: 1;
+        cursor: pointer;
+        outline: none;
+    }
+    .animation__menu-toggle {
+        left: 0!important;
+        transition: left 1s;
+    }
+    .nav__menu li {
+        
+    }
+    .nav__menu h4 {
+        color: white;
+        right: revert;
+    }
+    .nav__menu li:hover {
+        background-color: transparent!important;
+    }
+    .nav__menu li:hover h4 {
+        background: transparent!important;
+        right: revert!important;
+    }
+    
+  }
+  
+  
