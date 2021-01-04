@@ -44,12 +44,12 @@ export default function NavMenu() {
                                 <h4>Contact</h4>
                             </li>
                         </Link>
-                        <Link to='/blog'>
+                        {/* <Link to='/blog'>
                             <li className="nav__menu-blog">
                                 <FontAwesomeIcon icon={faComments} />
                                 <h4>Blog</h4>
                             </li>
-                        </Link>
+                        </Link> */}
                     </ul>
                 </div>
             </nav>

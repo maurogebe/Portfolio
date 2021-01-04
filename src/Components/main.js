@@ -12,6 +12,8 @@ import './main.css';
 import NavMenu from './globals/nav-menu'
 import Home from './home/home'
 import About from './about/about'
+import Portfolio from './portfolio/portfolio'
+import Contact from './contact/contact';
 
 
 
@@ -30,6 +32,14 @@ function Main() {
 
           <Route path="/about">
             <About />
+          </Route>
+
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+
+          <Route>
+            <Contact />
           </Route>
 
       </Switch>

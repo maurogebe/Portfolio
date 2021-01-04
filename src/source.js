@@ -14,7 +14,8 @@ const profile = {
         html: 90,
         css: 90,
         javascript: 80,
-        react: 70
+        react: 70,
+        git: 60,
     }
 }
 

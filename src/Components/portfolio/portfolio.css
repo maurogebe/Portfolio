@@ -1,0 +1,24 @@
+/* Page Portfolio */
+
+.portfolio {
+    /* position: relative; */
+}
+.portfolio__title {
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 3rem;
+    font-weight: 800;
+    position: relative;
+}
+.portfolio__text {
+    color: var(--color-principal);
+}
+.portfolio-title-transparent {
+    font-size: 7rem;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    font-weight: 800;
+    opacity: 0.02;
+}

@@ -19,10 +19,13 @@ export default function About() {
                 <h1 class="about__title">
                     ABOUT
                     <span class="about__text"> ME</span>
+                    <span className="about-title-transparent">
+                        RESUME
+                    </span>
                 </h1>
                 <section class="container">
                     <div class="content">
-                        <h3 class="content__title">PERSONAL INFOS</h3>
+                        <h2 class="content__title">PERSONAL INFOS</h2>
                         <PersonalDetail 
                             profileData={profile}
                         /> 
@@ -31,7 +34,6 @@ export default function About() {
                         <StatisticalData />
                     </div>
                 </section>
-
                 <StatsSkills 
                     profileData={profile}
                 />

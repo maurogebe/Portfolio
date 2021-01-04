@@ -1,0 +1,17 @@
+.projects-contain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3%;
+    width: 80%;
+    margin: 0 auto;
+}
+.project {
+
+}
+.project__link {
+
+}
+.project__img {
+    width: 100%;
+    border-radius: 20px;
+}

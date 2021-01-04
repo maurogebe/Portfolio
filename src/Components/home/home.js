@@ -1,4 +1,7 @@
 import React from 'react'
+import {
+    Link
+  } from "react-router-dom";
 
 // Import style
 import './home.css'
@@ -23,14 +26,14 @@ export default function Home(props) {
                             <p>
                                 Soy desarrollador Frontend de Medellin centrado en crear experiencias limpias y faciles de usar. Me apasiona plasmar las ideas y suenos en codigo para mostrar en tu pagina web.
                             </p>
-                            <div className="personal-button">
-                                <FontAwesomeIcon className="personal-button__icon" icon={faUser} />
-                                <a href="">
+                            <Link to="/about" className="button__link">
+                                <div className="personal-button">
+                                    <FontAwesomeIcon className="personal-button__icon" icon={faUser} />
                                     <span className="personal-button__link">
                                         MÁS SOBRE MÍ
                                     </span>
-                                </a>
-                            </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>

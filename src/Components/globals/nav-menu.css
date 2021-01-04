@@ -2,6 +2,7 @@ header {
     position: fixed;
     right: 20px;
     top: 20%;
+    z-index: 99;
   }
   .nav__menu-toggle > button {
     display: none;

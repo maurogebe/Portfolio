@@ -25,6 +25,10 @@ export default function StatsSkills(props) {
                     <h3 className="skill__title">Javascript</h3>
                 </div>
                 <div className="skill">
+                    <CircularProgressbar className="progress-skill" value={props.profileData.skills.git} text={`${props.profileData.skills.git}%`} />
+                    <h3 className="skill__title">Git</h3>
+                </div>
+                <div className="skill">
                     <CircularProgressbar className="progress-skill" value={props.profileData.skills.react} text={`${props.profileData.skills.react}%`} />
                     <h3 className="skill__title">React</h3>
                 </div>

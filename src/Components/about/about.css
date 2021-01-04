@@ -1,9 +1,27 @@
 /* Page About */
 
 /* Section 1 */
+.about {
+    /* position: relative; */
+}
 .about__title {
     text-align: center;
     padding: 4rem 0;
+    font-size: 3rem;
+    font-weight: 800;
+    position: relative;
+}
+.about__text {
+    color: var(--color-principal);
+}
+.about-title-transparent {
+    font-size: 6rem;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    font-weight: 800;
+    opacity: 0.02;
 }
 .container {
     display: flex;
@@ -14,7 +32,7 @@
     width: 100%;
 }
 .content__title {
-    padding: 0 0 1rem 0;
+    padding: 0 0 2rem 0;
 }
 
 .col-7__text-2 {
