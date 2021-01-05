@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 import emailjs from 'emailjs-com'
 
 // Import style
@@ -9,6 +9,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelopeOpen, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons'
 
 export default function Contact() {
+
+    const refFormContact = useRef()
+
+    useEffect(() => {
+        emailjs.init('user_uJJzFPGqkjCdFg7Sqz0Dr')
+    }, [])
+
+    const sendEmailContact = (event) => {
+        event.preventDefault()
+
+        emailjs.sendForm('default_service', 'template_ducyrrn', '#form-contact' )
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('enviado')
+            refFormContact.current.reset()
+         }, function(err) {
+            console.log('FAILED...', err);
+         });
+    }
 
     return (
         <>
@@ -44,13 +63,13 @@ export default function Contact() {
 
                         </div>
                     </div>
-                    <form className="form-contact">
+                    <form ref={refFormContact} onSubmit={sendEmailContact} id="form-contact" className="form-contact">
                         <div className="form-contact__contain-info">
-                            <input type="text" className="form-contact__input" placeholder="Your Name"></input>
-                            <input type="email" className="form-contact__input" placeholder="Your Email"></input>
-                            <input type="text" className="form-contact__input" placeholder="Your Subject"></input>
+                            <input type="text" name="user_name" className="form-contact__input" placeholder="Your Name"></input>
+                            <input type="email" name="user_email" className="form-contact__input" placeholder="Your Email"></input>
+                            <input type="text" name="user_subject" className="form-contact__input" placeholder="Your Subject"></input>
                         </div>
-                        <textarea type="text" className="form-contact__text-area" placeholder="Your Message"></textarea>
+                        <textarea type="text" name="message" className="form-contact__text-area" placeholder="Your Message"></textarea>
                         <button type="submit" className="form-contact__button">SEND MESSAGE</button>
                     </form>
                 </section>
